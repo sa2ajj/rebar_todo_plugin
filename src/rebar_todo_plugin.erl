@@ -24,7 +24,7 @@ todo(undefined) ->
 todo(ToDoConfig) ->
     Name = proplists:get_value(name, ToDoConfig, ?DEFAULT_NAME),
     WildCards = proplists:get_value(wildcards, ToDoConfig, ?DEFAULT_PATTERNS),
-    Files = sets:to_list(lists:foldl(fun get_files/2, sets:new(), WildCards)),
+    Files = lists:sort(sets:to_list(lists:foldl(fun get_files/2, sets:new(), WildCards))),
     ToDos = parse_many(Files, dict:new()),
     case dict:size(ToDos) of
         0 ->
