@@ -1,3 +1,10 @@
+% This file is part of rebar_todo_plugin.
+%
+% Copyright (C) 2011 by Mikhail Sobolev <mss@mawhrin.net>
+%
+% Please see LICENCE for the licence.
+%
+
 {application, rebar_todo_plugin, [
     {description, "Rebar TODO Plugin"},
     {vsn, "1"},
