@@ -1,0 +1,11 @@
+{application, rebar_todo_plugin, [
+    {description, "Rebar TODO Plugin"},
+    {vsn, "1"},
+    {registered, []},
+    {applications, [
+        kernel,
+        stdlib
+    ]},
+    {env, [
+    ]}
+]}.
