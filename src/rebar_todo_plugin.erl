@@ -95,7 +95,7 @@ dump_todos(Name, ToDos) ->
     end.
 
 print_kind(File, Kind, {ok, Items}) ->
-    io:format(File, "\n~s:\n\n", [Kind]),
+    io:format(File, "\n~s (~b):\n\n", [Kind, length(Items)]),
     lists:foreach(fun ({FName, LineNo, Text}) -> io:format(File, "~s:~b: ~s\n", [FName, LineNo, Text]) end, Items);
 print_kind(_File, _Kind, error) ->
     ok.
