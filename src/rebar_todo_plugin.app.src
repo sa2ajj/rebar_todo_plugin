@@ -7,7 +7,7 @@
 
 {application, rebar_todo_plugin, [
     {description, "Rebar TODO Plugin"},
-    {vsn, "1"},
+    {vsn, "1.0.0"},
     {registered, []},
     {applications, [
         kernel,
