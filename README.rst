@@ -66,7 +66,7 @@ There are three parameters that you can change:
     ``["include/*.hrl", "src/*.erl", "src/*.hrl"]``)
 
 ``noerror``
-    flag to not bail out should no TODO items are found
+    flag to not bail out should no TODO items be found
 
 Usage
 =====
