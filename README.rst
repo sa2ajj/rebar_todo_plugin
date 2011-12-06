@@ -44,7 +44,7 @@ Installation
 
 4. Update your environment::
 
-        $ export ERL_LIBS="$HOME/.rebar/plugins`:$ERL_LIBS"
+        $ export ERL_LIBS="$HOME/.rebar/plugins:$ERL_LIBS"
 
 Configuration
 =============
